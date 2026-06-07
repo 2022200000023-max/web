@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Entry Form</title>
+    <style> { 
+            box-sizing: border-box; 
+            margin: 100px; 
+            padding: 100px; }
+        body { 
+            font-family: 'Times New Roman',  sans-serif;
+            background: #039917;
+            display: flex; 
+            justify-content: right; 
+            align-items: right; 
+            height: 100vh; }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #1bd4431a;
+            text-align: center;
+            width: 400px;
+        }
+        h2 { color: #1c092b; margin-bottom: 20px; }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input:focus { border-color: #010508; outline: none; }
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            background: #020c16;
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(22, 218, 65);
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover { background: #18d184; }
+        h3 {
+            margin-top: 20px;
+            color: #484b4e;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Name Entry Form</h2>
+        <input type="text" id="nameInput" placeholder="Type your name here....">
+        <button onclick="displayName()">Show My Name</button>
+        <h3 id="nameResult"></h3>
+    </div>
+
+    <script>
+        function displayName() {
+            let name = document.getElementById("nameInput").value;
+            if (name.trim() === "") {
+                alert("Please enter your name!");
+            } else {
+                document.getElementById("nameResult").innerText = "Hello,Assalamualaikum, " + name + "!";
+            }
+        }
+    </script>
+</body>
+</html>
