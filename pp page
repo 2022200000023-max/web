@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: "Times New Roman", calibari;
+            background-color:#FFFFFF;
+        }
+
+        nav{
+            background-color:#090b2b;
+            padding: 20px;
+            display:flexbox
+            font-size :18px;
+        }
+
+        nav a{
+            color:blue;
+            text-decoration:underline;
+            margin-left:20px;
+            font-size:18px;
+        }
+
+        .profile{
+            text-align:left;
+            padding:40px;
+        }
+
+        .photo{
+            width: 150px;
+            height:150px;
+            background-color:#a32626;
+            border-radius:50%;
+            display :flex;
+            justify-content:center;
+            align-items:center;
+            margin:0 ;
+            line-height:150px;
+            font-weight:50;
+        }
+
+        h1{
+            color:#626066;
+        }
+
+        p{
+            color: #050000 lack;;
+            max-width:400px;
+            margin:0;
+        }
+
+        button{
+            margin-top:20px;
+            padding:10px 20px;
+            font-size:16px;
+            background-color:#007bff;
+            color:black;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#0056b3;
+        }
+
+        footer{
+            background-color:blue;
+            color:white;
+            text-align:left;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Education</a>
+    </nav>
+
+    <section class="profile">
+        <img class="photo" src="farzana akter (2).jpeg" alt="Farzana Akter">
+        
+
+        <h1>Farzana Akter</h1>
+
+        <p>
+            Hello! I am Farzana Akter. I am a student interested in
+            Web Development and Programming.
+        </p>
+
+        <button onclick="sayHello()">Say Hello</button>
+    </section>
+
+    <footer>
+        Created by Farzana Akter & copy; 2026
+    </footer>
+
+    <script>
+        function sayHello() {
+            alert("Welcome to my Personal Profile Page!");
+        }
+    </script>
+
+</body>
+</html>
